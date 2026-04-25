@@ -55,6 +55,13 @@ def render_app():
 
                 Пиши очень подробно, используй заголовки #, списки и жирный шрифт. 
                 Ответ должен быть на русском языке и содержать не менее 400 слов.
+
+                В КОНЦЕ ОТЧЕТА ОБЯЗАТЕЛЬНО ДОБАВЬ БЛОК:
+                ---
+                **Техническая информация для проверки:**
+                - **Источники:** [Укажи сайты, которые ты посетил через поиск]
+                - **Дата сбора данных:** {pd.Timestamp.now().strftime('%Y-%m-%d')}
+                - **Инструментарий:** DuckDuckGoSearchTool через smolagents.
                 """
                 
                 report = agent.run(prompt)
@@ -70,7 +77,7 @@ def render_app():
                     
                     if isinstance(report, dict):
                         for week, tasks in report.items():
-                            with st.expander(f"📍 {week}", expanded=True):о
+                            with st.expander(f"📍 {week}", expanded=True):
                                 st.markdown(tasks.replace('\n-', '\n*')) 
                     else:
                         st.markdown(report)

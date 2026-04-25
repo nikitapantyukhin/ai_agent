@@ -8,7 +8,8 @@ def create_agent():
     hf_token = os.getenv("HF_TOKEN")
     
     model = LiteLLMModel(
-    model_id="huggingface/Qwen/Qwen2.5-72B-Instruct", 
+    # model_id="huggingface/Qwen/Qwen2.5-72B-Instruct",
+    model_id="huggingface/Qwen/Qwen2.5-Coder-32B-Instruct",
     api_key=hf_token
 )
     
