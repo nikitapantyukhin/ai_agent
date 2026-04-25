@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+smolagents
+python-dotenv
+litellm

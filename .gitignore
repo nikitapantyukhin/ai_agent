@@ -1,0 +1,89 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# === Виртуальные окружения ===
+# Игнорируем стандартные папки venv
+venv/
+.venv/
+env/
+.env_old/
+ENV/
+env.bak/
+venv.bak/
+
+# === Секреты и Конфиги (КРИТИЧЕСКОЕ) ===
+.env
+.env.local
+.env.dev
+.env.test
+.env.prod
+*.tokens
+*.key
+*.pem
+secrets.yaml
+
+# === PyCharm / IntelliJ IDEA ===
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+cmake-build-*/
+
+# === VS Code ===
+.vscode/
+*.code-workspace
+.history/
+
+# === Streamlit ===
+# Если используешь локальные конфиги Streamlit
+.streamlit/config.toml
+.streamlit/secrets.toml
+
+# === Логи и БД ===
+*.log
+*.sqlite
+*.sqlite3
+*.db
+logs/
+temp/
+tmp/
+
+# === Системные файлы ===
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+
+# === Jupyter Notebook ===
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# === Специфичное для проекта (UTM, кеш) ===
+# Если твой агент генерирует отчеты или временные данные
+data/exports/
+cache/
+.pytest_cache/
+.cache/
